@@ -160,12 +160,14 @@ namespace SudokuGameWindowsForms
         /// <param name="e"></param>
         private void btnCheckThePuzzle_Click(object sender, EventArgs e)
         {
-            if (!GameBoard.IsBoardFilled())
-                MessageBox.Show("There is empty cell(s) in the puzzle.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if (GameBoard.Solver.CheckTableStateIsValid())
+            if(GameBoard.IsBoardFilled() && GameBoard.Solver.CheckTableStateIsValid())
                 MessageBox.Show("Congratulations, the puzzle is successfully solved.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            else
+            else if(GameBoard.IsBoardFilled() && !GameBoard.Solver.CheckTableStateIsValid())
                 MessageBox.Show("Sorry, the puzzle is not solved correctly.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if(!GameBoard.IsBoardFilled() && GameBoard.Solver.CheckTableStateIsValid(ignoreEmptyCells: true))
+                MessageBox.Show("The current state of the puzzle is correct, but not completed yet.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+                MessageBox.Show("Sorry, the current state of the puzzle is incorrect, and not completed yet.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         /// <summary>
@@ -179,7 +181,7 @@ namespace SudokuGameWindowsForms
             if (GameBoard.IsBoardFilled())
                 MessageBox.Show("The game board is already filled. Please reset the board or right click to any cell to empty or use 'Generate' to generate solved game board.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
-            if (GameBoard.Solver.SolveTheBoard(UseRandomGenerator: true))
+            if (GameBoard.Solver.SolveThePuzzle(UseRandomGenerator: true))
                 RefreshTheBoard();
             else
                 MessageBox.Show("Sorry, no solution for the current board. You can reset the board and generate solution from empty board.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -193,7 +195,7 @@ namespace SudokuGameWindowsForms
         private void btnGeneratePuzzle_Click(object sender, EventArgs e)
         {
             GameBoard.Clear();
-            GameBoard.Solver.SolveTheBoard(UseRandomGenerator: true);
+            GameBoard.Solver.SolveThePuzzle(UseRandomGenerator: true);
             RefreshTheBoard();
         }
 
