@@ -12,7 +12,7 @@ namespace SudokuGameWindowsForms
         {
             InitializeComponent();
 
-            CreateBoardCells();
+            CreateTheBoardCells();
         }
 
         #region Constants for creating sudoku cells onto form
@@ -26,7 +26,7 @@ namespace SudokuGameWindowsForms
         const int LARGE_PADDING = 5;
         #endregion
 
-        //  GameBoard Instance
+        // GameBoard Instance
         SudokuBoard GameBoard = new SudokuBoard();
 
         // List of the labels which are using as a cell.
@@ -48,7 +48,7 @@ namespace SudokuGameWindowsForms
         /// <summary>
         /// Creates the gameboard cells.
         /// </summary>
-        private void CreateBoardCells()
+        private void CreateTheBoardCells()
         {
             int currentTop = START_Y;
             int currentLeft = START_X;
@@ -98,8 +98,6 @@ namespace SudokuGameWindowsForms
         /// <summary>
         /// Click event handler of the cells.
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void Cell_MouseClick(object sender, MouseEventArgs e)
         {
             Label clickedCellControl = (sender as Label);
@@ -156,8 +154,6 @@ namespace SudokuGameWindowsForms
         /// <summary>
         /// 'Check the Puzzle' button click event handler.
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void btnCheckThePuzzle_Click(object sender, EventArgs e)
         {
             if (GameBoard.IsTableEmpty())
@@ -175,13 +171,11 @@ namespace SudokuGameWindowsForms
         /// <summary>
         /// 'Solve the Puzzle' button click event handler.
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void btnSolvePuzzle_Click(object sender, EventArgs e)
         {
             // Check the board is already filled.
             if (GameBoard.IsBoardFilled())
-                MessageBox.Show("The game board is already filled. Please reset the board or right click to any cell to empty or use 'Generate' to generate solved game board.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("The game board is already filled. Please reset the board or right click to any cell to empty or use 'Generate Random Puzzle' button to generate solved game board.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             if (GameBoard.Solver.SolveThePuzzle(UseRandomGenerator: true))
                 RefreshTheBoard();
@@ -192,8 +186,6 @@ namespace SudokuGameWindowsForms
         /// <summary>
         /// 'Generate Puzzle' button click event handler.
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void btnGeneratePuzzle_Click(object sender, EventArgs e)
         {
             GameBoard.Clear();
@@ -204,8 +196,6 @@ namespace SudokuGameWindowsForms
         /// <summary>
         /// 'Clear the Board' button click event handler.
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void btnClearTheBoard_Click(object sender, EventArgs e)
         {
             GameBoard.Clear();
@@ -215,8 +205,6 @@ namespace SudokuGameWindowsForms
         /// <summary>
         /// Help('?') button click event handler.
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void btnHelp_Click(object sender, EventArgs e)
         {
             string helpMessage = $"- Left-click the cell to set number to it." + Environment.NewLine +
