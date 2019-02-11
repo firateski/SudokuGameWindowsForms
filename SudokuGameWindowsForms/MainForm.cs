@@ -160,11 +160,13 @@ namespace SudokuGameWindowsForms
         /// <param name="e"></param>
         private void btnCheckThePuzzle_Click(object sender, EventArgs e)
         {
-            if(GameBoard.IsBoardFilled() && GameBoard.Solver.CheckTableStateIsValid())
+            if (GameBoard.IsTableEmpty())
+                MessageBox.Show("The puzzle is empty.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else if (GameBoard.IsBoardFilled() && GameBoard.Solver.CheckTableStateIsValid())
                 MessageBox.Show("Congratulations, the puzzle is successfully solved.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            else if(GameBoard.IsBoardFilled() && !GameBoard.Solver.CheckTableStateIsValid())
+            else if (GameBoard.IsBoardFilled() && !GameBoard.Solver.CheckTableStateIsValid())
                 MessageBox.Show("Sorry, the puzzle is not solved correctly.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if(!GameBoard.IsBoardFilled() && GameBoard.Solver.CheckTableStateIsValid(ignoreEmptyCells: true))
+            else if (!GameBoard.IsBoardFilled() && GameBoard.Solver.CheckTableStateIsValid(ignoreEmptyCells: true))
                 MessageBox.Show("The current state of the puzzle is correct, but not completed yet.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
                 MessageBox.Show("Sorry, the current state of the puzzle is incorrect, and not completed yet.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
