@@ -1,7 +1,7 @@
 # SudoGameWindowsForms
 Sudoku Game, Sudoku Solver, Sudoku Generator
 
-SudokuGameWindowsForms uses the library I've created.
+This project uses the library I've created and you can found here: https://github.com/firateski/SudokuLibrary-CSharp
 
 ## Features
 
