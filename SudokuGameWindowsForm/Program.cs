@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace SudokuGameWindowsForm
+namespace SudokuGameWindowsForms
 {
     static class Program
     {

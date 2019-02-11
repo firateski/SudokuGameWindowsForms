@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace SudokuGameWindowsForm
+namespace SudokuGameWindowsForms
 {
     public partial class NumPadDialog : Form
     {

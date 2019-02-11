@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SudokuGameWindowsForm.Properties {
+namespace SudokuGameWindowsForms.Properties {
     using System;
     
     

@@ -1,4 +1,4 @@
-﻿namespace SudokuGameWindowsForm
+﻿namespace SudokuGameWindowsForms
 {
     partial class MainForm
     {

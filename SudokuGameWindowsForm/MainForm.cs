@@ -4,7 +4,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using Sudoku;
 
-namespace SudokuGameWindowsForm
+namespace SudokuGameWindowsForms
 {
     public partial class MainForm : Form
     {
