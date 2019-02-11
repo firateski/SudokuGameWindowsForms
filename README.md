@@ -13,8 +13,8 @@ SudokuGameWindowsForms uses the library I've created.
 ## Screenshots
 Sudoku Game | Sudoku Game Play
 ------------ | -------------
-![Sudoku Game](http://firateski.com/images/sudoku/Sudoku_Screenshot_1.png) | ![Sudoku Game Play](http://firateski.com/images/sudoku/Sudoku_Screenshot_2.png)
+![Overview](http://firateski.com/images/sudoku/Sudoku_Screenshot_1.png) | ![Gameplay](http://firateski.com/images/sudoku/Sudoku_Screenshot_2.png)
 
 Sudoku Generator | Sudoku Game Play Animated
 ------------ | ------------
-![Sudoku Generator](http://firateski.com/images/sudoku/Sudoku_Generator_animated.gif) | ![Sudoku Game Intro](http://firateski.com/images/sudoku/Sudoku_intro_animated.gif)
+![Generator](http://firateski.com/images/sudoku/Sudoku_Generator_animated.gif) | ![Animated Overview](http://firateski.com/images/sudoku/Sudoku_intro_animated.gif)
