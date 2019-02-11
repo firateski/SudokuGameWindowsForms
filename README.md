@@ -17,4 +17,4 @@ Sudoku Game | Sudoku Game Play
 
 Sudoku Generator | Sudoku Game Play Animated
 ------------ | ------------
-![Sudoku Generator](http://firateski.com/images/sudoku/Sudoku_Generator_animated.gif) | ![Sudoku Game Intro](http://firateski.com/images/sudoku/Sudoku_animated_intro.gif
+![Sudoku Generator](http://firateski.com/images/sudoku/Sudoku_Generator_animated.gif) | ![Sudoku Game Intro](http://firateski.com/images/sudoku/Sudoku_animated_intro.gif)
