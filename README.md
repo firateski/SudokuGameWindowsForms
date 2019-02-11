@@ -1,5 +1,5 @@
-# SudoGameWindowsForms
-***Sudoku Game, Sudoku Solver, Sudoku Generator***
+# SudokuGameWindowsForms
+**Sudoku Game, Sudoku Solver, Sudoku Generator**
 
 *This project uses the library I've created and you can found here: https://github.com/firateski/SudokuLibrary-CSharp*
 
