@@ -1,4 +1,4 @@
-# SudokuGameWindowsForms
+# SudoGameWindowsForms
 Sudoku Game, Sudoku Solver, Sudoku Generator
 
 SudokuGameWindowsForms uses the library I've created.
@@ -17,4 +17,4 @@ Sudoku Game | Sudoku Game Play
 
 Sudoku Generator | Sudoku Game Play Animated
 ------------ | ------------
-![Sudoku Generator](http://firateski.com/images/sudoku/Sudoku_Generator_animated.gif) | ![Sudoku Game Play Animated](http://firateski.com/images/sudoku/Sudoku_animated_optimized.gif)
+![Sudoku Generator](http://firateski.com/images/sudoku/Sudoku_Generator_animated.gif) | ![Sudoku Generator](http://firateski.com/images/sudoku/Sudoku_animated_intro.gif
