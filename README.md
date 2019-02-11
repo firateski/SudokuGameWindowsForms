@@ -11,10 +11,10 @@ SudokuGameWindowsForms uses the library I've created.
 - [x] Sudoku Checker
 
 ## Screenshots
-Sudoku Game | Sudoku Game Play
+Overview | Overview (Animated)
 ------------ | -------------
-![Overview](http://firateski.com/images/sudoku/Sudoku_Screenshot_1.png) | ![Gameplay](http://firateski.com/images/sudoku/Sudoku_Screenshot_2.png)
+![Overview](http://firateski.com/images/sudoku/Sudoku_Screenshot_1.png) | ![Animated Overview](http://firateski.com/images/sudoku/Sudoku_intro_animated.gif)
 
-Sudoku Generator | Sudoku Game Play Animated
+Generator (Animated) | Gameplay
 ------------ | ------------
-![Generator](http://firateski.com/images/sudoku/Sudoku_Generator_animated.gif) | ![Animated Overview](http://firateski.com/images/sudoku/Sudoku_intro_animated.gif)
+![Generator](http://firateski.com/images/sudoku/Sudoku_Generator_animated.gif) | ![Gameplay](http://firateski.com/images/sudoku/Sudoku_Screenshot_2.png)
